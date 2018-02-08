@@ -1,8 +1,8 @@
 ### Handwritten digits for MNIST validation
 
----
 
-A couple of handwritten and slightly processed nminst digits. Currently, there there are **172** digits.
+
+A couple of handwritten and slightly processed MNIST digits. Currently, there there are **172** digits.
 
 ---
 
@@ -13,7 +13,7 @@ it downloads the data and saves it to a temporary location):
 import numpy as np
 from urllib.request import urlretrieve
 filename, headers = urlretrieve(
-    'https://github.com/Avatust/my-nminst-digits/raw/master/data/digits.npz')
+    'https://github.com/Avatust/my-mnist-digits/raw/master/data/digits.npz')
 
 with np.load(filename) as data:
     x_data = data['input_data']
